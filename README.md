@@ -9,15 +9,11 @@ mysql -u root -p
 # 输入密码后运行，注意文件路径修改为你的电脑上的路径
 source E:\Edesktop\software-engineering\DataBase_Setup\setup_database.sql
 ```
-
 后面添加数据可以运行database_setup的目录下的python文件
-
 现在已经成功实现数据库+后端+前端连通
-
 ---
 
 ## 项目启动：
-
 ```python
 python run.py
 ```
@@ -34,7 +30,6 @@ python run.py
 ## 注意事项：
 
 * 如果在后端配合的时候，页面跳转出现了类似404 NOT FOUND的提示，大概率是因为这个路由没有在蓝图中注册，在app/routes/这个目录下，找一个或者新建一个py文件（新建的话还要再init.py添加新的蓝图），添加对应的文件路径即可。
-* 目前版本的项目结构管理和功能划分还处于能跑就行的阶段，后续有待完善。。。。
 * 数据库目前的数据只有部分，后面有需要可以更新database_setup的sql文件，以便后续部署。
-* 使用前记得配置一下修改一下config.py文件，毕竟我们的mysql的登录密码不太可能一样
+* 使用前记得配置一下修改一下config.py文件，毕竟我们的mysql的登录密码可能会不一样
 * 注意使用自己的API，在.env那里替换
