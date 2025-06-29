@@ -22,6 +22,17 @@ source E:\Edesktop\software-engineering\DataBase_Setup\setup_database.sql
 python run.py
 ```
 
+## 项目部署：
+
+```bash
+# 进入项目目录
+cd E:\Edesktop\software-engineering
+# 安装依赖
+pip install -r requirements.txt
+# 启动项目
+python run.py
+```
+
 ## 目前进度
 
 * 数据库的初步搭建并和项目连接，登录和跳转的前后端逻辑基本实现
