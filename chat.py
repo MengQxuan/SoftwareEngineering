@@ -58,8 +58,6 @@ def chat(input: str) -> str:
     # 返回回复内容
     return assistant_message.content
 
-
-# 示例对话
 if __name__ == "__main__":
     print(chat("你好，我今年 27 岁。"))
     print(chat("你知道我今年几岁吗？"))  # Kimi 将根据上下文回答你的年龄

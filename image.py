@@ -108,7 +108,7 @@ def process_image_with_question(image_path, question):
 if __name__ == "__main__":
     # 测试函数
     image_path = "./app/upload/gui.jpg"
-    question = "图片里面是什么。"
+    question = "图片里面是什么？"
 
     response = process_image_with_question(image_path, question)
     print(response)
