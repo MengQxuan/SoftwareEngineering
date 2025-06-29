@@ -14,17 +14,17 @@ client = OpenAI(
     api_key=api_key,
     base_url="https://api.moonshot.cn/v1",
 )
- 
+
 # 在这里，你需要将 kimi.png 文件替换为你想让 Kimi 识别的图片的地址
 image_path = "./app/upload/gui.jpg"
- 
+
 with open(image_path, "rb") as f:
     image_data = f.read()
- 
+
 # 我们使用标准库 base64.b64encode 函数将图片编码成 base64 格式的 image_url
 image_url = f"data:image/{os.path.splitext(image_path)[1]};base64,{base64.b64encode(image_data).decode('utf-8')}"
- 
-question = "图片里面是什么。"
+
+question = "图片里面是什么？"
 
 completion = client.chat.completions.create(
     model="moonshot-v1-8k-vision-preview",
